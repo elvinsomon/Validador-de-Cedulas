@@ -1,6 +1,7 @@
-let cedula = prompt('Favor ingrese su cédula');
+let cedulaOriginal = prompt('Favor ingrese su cédula');
 
-cedula = cedula.replace('-', '');
-cedula = cedula.replace('-', '');
+let cedulaSinG = cedulaOriginal.replace('-', '');
+cedulaSinG = cedulaSinG.replace('-', '');
 
-console.log(cedula);
+let cedula10 = cedulaSinG.substring(0, 10);
+console.log(cedula10);
